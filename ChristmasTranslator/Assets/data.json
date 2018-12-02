@@ -1,0 +1,35 @@
+{
+  "Difficulties": [
+    {
+    "DifficultyValue": "1",
+    "Sentences" :[
+      {
+        "Words": "Vinter",
+        "English": "Winter",
+        "Language": "Swedish"
+      },
+      {
+        "Words": "God Jul",
+        "English": "Merry christmas",
+        "Language": "Swedish"
+      }
+    ]},
+    {
+      "DifficultyValue": "2",
+      "Sentences":[
+      {
+        "Words": "Midvinter kold",
+        "English": "Midwinter frost",
+        "Language": "Swedish",
+        "Alternatives": [
+          "Midvinter kold"
+          ]
+      },
+      {
+        "Words": "Vrolijk kerstmis",
+        "English": "Merry christmas",
+        "Language": "Dutch"
+      }
+    ]}
+  ]
+}
