@@ -20,11 +20,12 @@ namespace Assets.Scripts
     [Serializable]
     public class Sentence
     {
-        public string Words;
-        public string English;
-        public string Language;
+        public string Question;
+        public string Answer;
+        public string From;
+        public string To;
         public List<string> Alternatives;
-       // public int Occurance;
+        public int Occurance;
     }
 
 }

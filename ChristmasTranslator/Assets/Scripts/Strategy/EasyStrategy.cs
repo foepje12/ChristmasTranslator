@@ -12,15 +12,29 @@ namespace Assets.Scripts.Strategy
         {
             get
             {
-               return 1;
+                return 0;
             }
+        }
+
+
+
+        public float GetCost()
+        {
+            float number = -0.0010f;
+            return number;
+
+        }
+
+        public float GetTranslationValue(int occurance)
+        {
+            float number = 0.20f / ((occurance + 1) / 1.5f);
+            return number;
         }
 
         public Sentence GetNextSentence(List<Sentence> sentences)
         {
-           // sentences.OrderBy(s => s.Occurance);
-           // sentences[0].Occurance++;
-           // Debug.Log(sentences[0].Occurance);
+            sentences = sentences.OrderBy(s => s.Occurance).ToList();
+            sentences[0].Occurance++;
             return sentences[0];
         }
     }

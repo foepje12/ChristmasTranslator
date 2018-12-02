@@ -1,34 +1,38 @@
 {
   "Difficulties": [
     {
-    "DifficultyValue": "1",
-    "Sentences" :[
-      {
-        "Words": "Vinter",
-        "English": "Winter",
-        "Language": "Swedish"
-      },
-      {
-        "Words": "God Jul",
-        "English": "Merry christmas",
-        "Language": "Swedish"
-      }
+      "DifficultyValue": "1",
+      "Sentences" :[
+       { 
+       	"Question": "Vinter",
+        "Answer": "Winter",
+        "From": "Swedish",
+        "To": "English" 
+       },
+       { 
+       	"Question": "God Jul",
+       	"Answer": "Merry christmas",
+        "From": "Swedish", 
+       	"To": "English" 
+     }
     ]},
     {
       "DifficultyValue": "2",
       "Sentences":[
       {
-        "Words": "Midvinter kold",
-        "English": "Midwinter frost",
-        "Language": "Swedish",
+        "Question": "Midvinter kold",
+        "Answer": "midwinter kold",
+        "From": "Swedish",
+        "To": "English",
         "Alternatives": [
-          "Midvinter kold"
+          "midwinter frost"
           ]
       },
       {
-        "Words": "Vrolijk kerstmis",
-        "English": "Merry christmas",
-        "Language": "Dutch"
+        "Question": "Vrolijk kerstmis",
+        "Answer": "Merry christmas",
+        "From": "Dutch",
+        "To": "English"
       }
     ]}
   ]
