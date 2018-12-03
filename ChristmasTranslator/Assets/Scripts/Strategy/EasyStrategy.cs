@@ -15,9 +15,7 @@ namespace Assets.Scripts.Strategy
                 return 0;
             }
         }
-
-
-
+               
         public float GetCost()
         {
             float number = -0.0010f;
@@ -34,8 +32,15 @@ namespace Assets.Scripts.Strategy
         public Sentence GetNextSentence(List<Sentence> sentences)
         {
             sentences = sentences.OrderBy(s => s.Occurance).ToList();
-            sentences[0].Occurance++;
-            return sentences[0];
+
+            int lowestOccurance = sentences[0].Occurance;
+            List<Sentence> newList = sentences.Where(s => s.Occurance >= lowestOccurance && s.Occurance <= lowestOccurance + 1).ToList();
+
+            System.Random rand = new System.Random();
+            var sentence = newList[rand.Next(0, newList.Count())];
+
+            sentence.Occurance++;
+            return sentence;
         }
     }
 }

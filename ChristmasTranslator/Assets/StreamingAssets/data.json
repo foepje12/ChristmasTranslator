@@ -1,0 +1,277 @@
+{
+  "Difficulties": [
+    {
+      "DifficultyValue": "1",
+      "Sentences" :[      
+      {      
+        "Question" : "Jul",
+        "Answer" : "Christmas",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas",
+        "Answer" : "Jul",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Vinter",
+        "Answer" : "Winter",
+        "From" : "Swedish",
+        "To" : "English"
+      },      
+      {
+        "Question" : "Winter",
+        "Answer" : "Vinter",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Kall",
+        "Answer" : "Cold",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Cold",
+        "Answer" : "Kall",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Kerstmis",
+        "Answer" : "Christmas",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas",
+        "Answer" : "Kerstmis",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Sneeuw",
+        "Answer" : "Snow",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "Snow",
+        "Answer" : "Sneeuw",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Noël",
+        "Answer" : "Christmas",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas",
+        "Answer" : "Noël",
+        "From" : "English",
+        "To" : "French",
+        "Alternatives" : [
+          "Noel"
+        ]
+      },
+      {
+        "Question" : "La glace",
+        "Answer" : "Ice",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Ice",
+        "Answer" : "La glace",
+        "From" : "English",
+        "To" : "French"
+      },
+      {
+        "Question" : "Neige",
+        "Answer" : "Snow",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Snow",
+        "Answer" : "Neige",
+        "From" : "English",
+        "To" : "French"
+      }
+    ]},
+    {
+      "DifficultyValue": "2",
+      "Sentences":[ 
+        {
+        "Question" : "God Jul",
+        "Answer" : "Merry Christmas",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Merry Christmas",
+        "Answer" : "God Jul",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Juldagen",
+        "Answer" : "Christmas Day",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas Day",
+        "Answer" : "Juldagen",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Julgran",
+        "Answer" : "Christmas tree",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas tree",
+        "Answer" : "Julgran",
+        "From" : "English",
+        "To" : "Swedish"
+      },
+      {
+        "Question" : "Vrolijk Kerstfeest",
+        "Answer" : "Merry Christmas",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "Merry Christmas",
+        "Answer" : "Vrolijk Kerstfeest",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Kerstboom",
+        "Answer" : "Christmas tree",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas tree",
+        "Answer" : "Kerstboom",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Sneeuwpop",
+        "Answer" : "Snowman",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "Snowman",
+        "Answer" : "Sneeuwpop",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Pere de Noël",
+        "Answer" : "Santa Claus",
+        "From" : "French",
+        "To" : "English",
+        "Alternatives" : [
+          "Santa",
+          "Father Christmas"
+        ]
+      },
+      {
+        "Question" : "Santa Claus",
+        "Answer" : "Pere de Noël",
+        "From" : "English",
+        "To" : "French",
+        "Alternatives" : [
+          "Pere de Noel"
+        ]
+      },
+      {
+        "Question" : "Joyeux Noël",
+        "Answer" : "Merry christmas",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Merry christmas",
+        "Answer" : "Joyeux Noël",
+        "From" : "English",
+        "To" : "French",
+        "Alternatives" : [
+          "Joyeux Noel"
+        ]
+      }
+    ]},
+    {
+      "DifficultyValue": "3",
+      "Sentences":[
+      {
+        "Question" : "Julstjärna",
+        "Answer" : "Christmas Star",
+        "From" : "Swedish",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas Star",
+        "Answer" : "Julstjärna",
+        "From" : "English",
+        "To" : "Swedish",
+        "Alternatives" : [
+          "Julstjarna"
+        ]
+      },
+      {
+        "Question" : "Wij wensen u een vrolijk kerstmis",
+        "Answer" : "We wish you a merry christmas",
+        "From" : "Dutch",
+        "To" : "English"
+      },
+      {
+        "Question" : "We wish you a merry christmas",
+        "Answer" : "Wij wensen u een vrolijk kerstmis",
+        "From" : "English",
+        "To" : "Dutch"
+      },
+      {
+        "Question" : "Réveillon de Noël",
+        "Answer" : "Christmas Eve",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Christmas Eve",
+        "Answer" : "Réveillon de Noël",
+        "From" : "English",
+        "To" : "French",
+        "Alternatives" : [
+          "Réveillon de Noel",
+          "Reveillon de Noël",
+          "Reveillon de Noel"
+        ]
+      },
+      {
+        "Question" : "Bonhomme de neige",
+        "Answer" : "Snowman",
+        "From" : "French",
+        "To" : "English"
+      },
+      {
+        "Question" : "Snowman",
+        "Answer" : "Bonhomme de neige",
+        "From" : "English",
+        "To" : "French"
+      }
+    ]}
+  ]
+}

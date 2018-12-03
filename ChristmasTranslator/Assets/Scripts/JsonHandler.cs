@@ -7,7 +7,7 @@ public class JsonHandler
 {
     private static string ReadJsonFile()
     {
-        string filePath = Application.dataPath + "/data.json";
+        string filePath = Application.streamingAssetsPath + "/data.json";
 
         if (File.Exists(filePath))
             return File.ReadAllText(filePath);

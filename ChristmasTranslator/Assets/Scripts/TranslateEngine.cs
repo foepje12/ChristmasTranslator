@@ -13,7 +13,7 @@ namespace Assets.Scripts
         public bool shouldCountdown = false;
         public Sentence currentSentence;
 
-        private readonly List<Sentence> sentences;
+        private List<Sentence> sentences;
         private GameController controller;
         private bool hasStarted = false;
         private bool hasAnswered = false;
@@ -47,24 +47,36 @@ namespace Assets.Scripts
 
             if (Input.GetKeyDown(KeyCode.Return) && hasAnswered)
             {
+                controller.sacrificeButton.SetActive(false);
                 hasAnswered = false;
                 controller.UpdateSentence();
                 shouldCountdown = true;
                 SetRectangle(2);
+                inputField.text = "";
             }
 
             //If we press enter in the inputField
             if (Input.GetKeyDown(KeyCode.Return) && inputField.text.Length > 0)
             {
+                controller.sacrificeButton.SetActive(true);
                 var answer = CheckAnswer(inputField.text);
                 SetRectangle(answer ? 0 : 1);
 
+                //The answer was correct!
                 if (answer)
                 {
-                    controller.ChangePoints(currentStrategy.GetTranslationValue(currentSentence.Occurance));
-                }
+                    var score = currentStrategy.GetTranslationValue(currentSentence.Occurance);
 
-                inputField.text = "";
+                    if (controller.hasRevealedAnswer)
+                        score /= 2;
+
+                    controller.totalScore += (int)Mathf.Round(1.4f * (currentStrategy.Difficulty + 1)) * 100;
+                    controller.totalScoreText.text = controller.totalScore.ToString();
+                    controller.ChangePoints(score);
+                }
+                else
+                    controller.ChangePoints(-0.05f);
+
                 hasAnswered = true;
                 shouldCountdown = false;
             }
@@ -87,12 +99,19 @@ namespace Assets.Scripts
             GameObject.Find("AnswerRectangle").GetComponent<Image>().color = color;
         }
 
+        /// <summary>
+        /// Checks the given answer
+        /// </summary>
+        /// <param name="answer"></param>
+        /// <returns>true if correct</returns>
         public bool CheckAnswer(string answer)
         {
             answer = answer.ToLower();
 
-            var possibleAnswers = new List<string>();
-            possibleAnswers.Add(currentSentence.Answer.ToLower());
+            var possibleAnswers = new List<string>
+            {
+                currentSentence.Answer.ToLower()
+            };
 
             //If there are alternative sentences, add them to the list of possible answers
             if (currentSentence.Alternatives != null && currentSentence.Alternatives.Count > 0)
@@ -113,6 +132,11 @@ namespace Assets.Scripts
         {
             RootObject x = JsonHandler.GetLanguageObject();
             return x.Difficulties[difficulty].Sentences.ToList();
+        }
+
+        public void UpdateSentences()
+        {
+            sentences = GetSentencesFromFile(currentStrategy.Difficulty);
         }
     }
 }
